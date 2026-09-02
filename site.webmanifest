@@ -1,0 +1,9 @@
+{
+  "name": "Bella's Sourcing Field Notes",
+  "short_name": "Bella's Field Notes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#132a32",
+  "icons": []
+}
