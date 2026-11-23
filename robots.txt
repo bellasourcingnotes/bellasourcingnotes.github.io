@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bellasourcingnotes.github.io/sitemap.xml
+Sitemap: https://bellachengsourcing.com/sitemap.xml

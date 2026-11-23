@@ -2,4 +2,4 @@
 
 Official personal website of Bella Cheng, focused on practical China-side sourcing insight and project execution.
 
-Website: https://bellasourcingnotes.github.io/
+Website: https://bellachengsourcing.com/
