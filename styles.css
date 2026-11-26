@@ -78,6 +78,30 @@ h3 { line-height: 1.25; }
 .about-preview { margin-bottom: 110px; padding: 70px; background: var(--mist); display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
 .about-preview h2 { margin-bottom: 0; }
 .about-preview p { color: var(--muted); font-size: 17px; }
+.team-section { margin-block: 80px; scroll-margin-top: 110px; }
+.team-section .section-heading { margin-bottom: 28px; }
+.team-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; }
+.team-card { grid-column: span 2; display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); }
+.team-card:nth-child(4) { grid-column: 2 / span 2; }
+.team-portrait { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--mist); }
+.team-portrait img { position: absolute; inset: var(--photo-y, 0) auto auto var(--photo-x, 0); display: block; width: var(--photo-width, 100%); height: auto; max-width: none; }
+.team-portrait--bella { --photo-width: 114%; --photo-x: -9%; --photo-y: -2%; }
+.team-portrait--danny { --photo-width: 224%; --photo-x: -29%; --photo-y: -20%; }
+.team-portrait--thomas { --photo-width: 199%; --photo-x: -54%; --photo-y: -2%; }
+.team-portrait--mark { --photo-width: 129%; --photo-x: -10%; --photo-y: -4%; }
+.team-portrait--sharing { --photo-width: 130%; --photo-x: -5%; --photo-y: 0%; }
+.team-card-copy { padding: clamp(18px, 2.4vw, 28px); }
+.team-card-copy h3 { margin: 0; font: 1.7rem Georgia, serif; }
+.team-card-copy p { margin: 12px 0 0; color: var(--muted); }
+.team-card-copy .team-role { margin-top: 4px; color: var(--teal); font-weight: 700; }
+@media (max-width: 850px) {
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-card, .team-card:nth-child(4) { grid-column: auto; }
+}
+@media (max-width: 540px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .team-section { margin-block: 56px; }
+}
 .site-footer { padding-block: 48px; background: var(--ink); color: white; }
 .footer-grid { display: flex; justify-content: space-between; align-items: center; gap: 30px; }
 .footer-grid p { margin: 4px 0 0; color: #aebfc2; font-size: 13px; }
