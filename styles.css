@@ -105,7 +105,7 @@ h3 { line-height: 1.25; }
 .buyer-photo--india { --gallery-y: -58%; }
 .buyer-photo--indonesia-partner { --gallery-width: 110%; --gallery-x: -3%; --gallery-y: -9%; }
 .buyer-photo--indonesia-team { --gallery-y: -43%; }
-.buyer-photo--indonesia-client { --gallery-y: -57%; }
+.buyer-photo--italy { --gallery-y: -25%; }
 .buyer-gallery-grid figcaption { display: grid; gap: 4px; padding: 16px 20px 20px; }
 .buyer-gallery-grid figcaption strong { color: var(--ink); font: 1.4rem Georgia, serif; }
 .buyer-gallery-grid figcaption span { color: var(--muted); }
