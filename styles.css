@@ -95,6 +95,23 @@ h3 { line-height: 1.25; }
 .team-card-copy .team-role { margin-top: 4px; color: var(--teal); font-weight: 700; }
 .home-team { margin-top: -30px; }
 .home-team-more { margin: 24px 0 0; }
+.buyer-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.buyer-gallery-grid figure { margin: 0; background: var(--white); border: 1px solid var(--line); }
+.buyer-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--mist); }
+.buyer-photo img { position: absolute; inset: var(--gallery-y, 0) auto auto var(--gallery-x, 0); display: block; width: var(--gallery-width, 100%); height: auto; max-width: none; }
+.buyer-photo--peru { --gallery-width: 145%; --gallery-x: -28%; --gallery-y: -41%; }
+.buyer-photo--indonesia { --gallery-width: 111%; --gallery-x: -9%; --gallery-y: -8%; }
+.buyer-photo--turkiye { --gallery-width: 122%; --gallery-x: -16%; --gallery-y: -21%; }
+.buyer-photo--india { --gallery-y: -58%; }
+.buyer-photo--indonesia-partner { --gallery-width: 110%; --gallery-x: -3%; --gallery-y: -9%; }
+.buyer-photo--indonesia-team { --gallery-y: -43%; }
+.buyer-photo--indonesia-client { --gallery-y: -57%; }
+.buyer-gallery-grid figcaption { display: grid; gap: 4px; padding: 16px 20px 20px; }
+.buyer-gallery-grid figcaption strong { color: var(--ink); font: 1.4rem Georgia, serif; }
+.buyer-gallery-grid figcaption span { color: var(--muted); }
+@media (max-width: 650px) {
+  .buyer-gallery-grid { grid-template-columns: 1fr; gap: 20px; }
+}
 @media (min-width: 1060px) {
   .home-team .team-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
   .home-team .team-card, .home-team .team-card:nth-child(4) { grid-column: auto; }
