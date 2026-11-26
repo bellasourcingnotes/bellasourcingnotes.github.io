@@ -87,14 +87,29 @@ h3 { line-height: 1.25; }
 .team-portrait img { position: absolute; inset: var(--photo-y, 0) auto auto var(--photo-x, 0); display: block; width: var(--photo-width, 100%); height: auto; max-width: none; }
 .team-portrait--bella { --photo-width: 114%; --photo-x: -9%; --photo-y: -2%; }
 .team-portrait--thomas { --photo-width: 199%; --photo-x: -54%; --photo-y: -2%; }
-.team-portrait--mark { --photo-width: 129%; --photo-x: -10%; --photo-y: -4%; }
-.team-portrait--sharing { --photo-width: 130%; --photo-x: -5%; --photo-y: 0%; }
+.team-portrait--mark { --photo-width: 100%; }
+.team-portrait--sharing { --photo-width: 125%; --photo-x: -4%; --photo-y: -3%; }
 .team-card-copy { padding: clamp(18px, 2.4vw, 28px); }
 .team-card-copy h3 { margin: 0; font: 1.7rem Georgia, serif; }
 .team-card-copy p { margin: 12px 0 0; color: var(--muted); }
 .team-card-copy .team-role { margin-top: 4px; color: var(--teal); font-weight: 700; }
 .home-team { margin-top: -30px; }
 .home-team-more { margin: 24px 0 0; }
+.team-work { margin-block: clamp(48px, 8vw, 96px); scroll-margin-top: 110px; }
+.team-work .section-heading { margin-bottom: 26px; }
+.team-work-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.team-work-card { margin: 0; padding: 14px; border: 1px solid var(--line); background: var(--white); }
+.team-work-card img { display: block; width: 100%; max-width: 250px; height: auto; }
+.team-work-card h3 { margin: 13px 0 6px; font-size: 1.18rem; }
+.team-work-card p { margin: 0; color: var(--muted); }
+.team-work-card .text-link { display: inline-block; margin-top: 12px; }
+.team-work-more { margin: 18px 0 0; }
+@media (max-width: 950px) {
+  .team-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .team-work-grid { grid-template-columns: 1fr; }
+}
 .buyer-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
 .buyer-gallery-grid figure { margin: 0; background: var(--white); border: 1px solid var(--line); }
 .buyer-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--mist); }
