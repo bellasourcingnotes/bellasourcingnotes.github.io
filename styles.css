@@ -71,6 +71,10 @@ h3 { line-height: 1.25; }
 .service-card span { color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
 .service-card h3 { margin: 72px 0 14px; font-family: Georgia, serif; font-size: 25px; font-weight: 400; }
 .service-card p { color: var(--muted); font-size: 14px; }
+.buyer-service-grid .service-card { min-height: 0; }
+.buyer-service-grid .service-card h3 { margin: 0 0 14px; }
+.buyer-service-grid .service-card p { margin-bottom: 0; font-size: 1rem; }
+.buyer-service-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin: 24px 0 0; color: var(--muted); }
 .about-preview { margin-bottom: 110px; padding: 70px; background: var(--mist); display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
 .about-preview h2 { margin-bottom: 0; }
 .about-preview p { color: var(--muted); font-size: 17px; }
@@ -144,6 +148,17 @@ h3 { line-height: 1.25; }
 .case-card:first-child .case-outcome { border-color: #3c555c; }
 .case-outcome strong { display: block; margin-bottom: 6px; color: var(--teal); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
 .case-card:first-child .case-outcome strong { color: var(--blue); }
+.featured-case img { aspect-ratio: 3 / 2; object-fit: cover; object-position: 42% center; }
+.prototype-photos { margin-top: 32px; }
+.prototype-photos h3 { margin: 0 0 16px; font-size: 1.0625rem; }
+.prototype-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.prototype-gallery figure { margin: 0; }
+.prototype-gallery figure:first-child { grid-column: 1 / -1; }
+.prototype-gallery img { display: block; width: 100%; height: auto; }
+.prototype-gallery figcaption { margin-top: 7px; color: #c8d4d6; font-size: .875rem; }
+@media (max-width: 650px) {
+  .prototype-gallery { grid-template-columns: 1fr; }
+}
 .case-outcome span { font-family: Georgia, serif; font-size: 21px; }
 .privacy-note { margin-top: 36px; color: var(--muted); font-size: 13px; }
 
