@@ -95,16 +95,34 @@ h3 { line-height: 1.25; }
 .team-card-copy .team-role { margin-top: 4px; color: var(--teal); font-weight: 700; }
 .home-team { margin-top: -30px; }
 .home-team-more { margin: 24px 0 0; }
-.team-work { margin-block: clamp(48px, 8vw, 96px); scroll-margin-top: 110px; }
-.team-work .section-heading { margin-bottom: 26px; }
-.team-work-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
-.team-work-card { margin: 0; padding: 14px; border: 1px solid var(--line); background: var(--white); }
-.team-work-card img { display: block; width: 100%; max-width: 250px; height: auto; }
-.team-work-card h3 { margin: 13px 0 6px; font-size: 1.18rem; }
-.team-work-card p { margin: 0; color: var(--muted); }
-.team-work-card .text-link { display: inline-block; margin-top: 12px; }
-.team-work-more { margin: 18px 0 0; }
-@media (max-width: 950px) {
+.team-work {
+  margin-block: clamp(48px, 8vw, 96px);
+  padding: 0 clamp(14px, 4vw, 48px) clamp(20px, 4vw, 44px);
+  scroll-margin-top: 110px;
+  background: var(--mist);
+}
+.team-work .section-heading {
+  max-width: none;
+  margin: 0 calc(-1 * clamp(14px, 4vw, 48px)) clamp(22px, 4vw, 42px);
+  padding: clamp(22px, 4vw, 44px) clamp(14px, 4vw, 48px);
+  background: var(--ink);
+  color: var(--white);
+}
+.team-work .section-heading h2 { margin-bottom: 10px; }
+.team-work .section-heading p { max-width: 65ch; margin: 0; color: var(--mist); }
+.team-work-group + .team-work-group { margin-top: clamp(22px, 3vw, 36px); }
+.team-work-group h3 { margin: 0 0 12px; color: var(--teal); font-size: 1.13rem; }
+.team-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 2vw, 22px); }
+.team-work-card {
+  margin: 0;
+  padding: clamp(10px, 1.5vw, 16px);
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+.team-work-card img { width: 100%; max-width: 260px; height: auto; margin-inline: auto; }
+.team-work-card figcaption { max-width: 260px; margin-inline: auto; padding-top: 10px; font-size: .94rem; line-height: 1.45; }
+.team-work-more { margin: 24px 0 0; }
+@media (max-width: 760px) {
   .team-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 520px) {
